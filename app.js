@@ -7,10 +7,14 @@ function clickHandler() {
     var dob = dateOfBirth.value;
     var sum = prediction(dob);
     var number = luckyNumber.value;
-    if (sum && number) {
-        logic(sum, number);
-    } else {
-        outputBox.innerText = "Please enter both the fields";
+    if (number > 0) {
+        if (sum && number) {
+            logic(sum, number);
+        } else {
+            outputBox.innerText = "Please enter both the fields";
+        }
+    }else{
+        alert("Invalid Inputs");
     }
 }
 
@@ -35,8 +39,5 @@ function prediction(dob) {
 function displayMsg(message) {
     outputBox.innerText = message;
 }
-
-
-
 
 checkButton.addEventListener('click', clickHandler);
