@@ -1,6 +1,8 @@
 body{
-    background-color:black;
-    color: cyan;
+    background-image: url("birth-Day.jpg");
+background-size: cover;
+    /* background-repeat: no-repeat; */
+    color:black;
 }
 
 h1{
@@ -12,12 +14,8 @@ h1{
     margin: auto;
 }
 
-input , label{
+input {
     display: block;
-    padding-bottom: 1rem;
-}
-
-label{
     padding-bottom: 1rem;
 }
 
@@ -31,9 +29,17 @@ input {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .output-box{
+    margin-top: 10rem;
     font-weight: bold;
     text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+label{
+    margin-bottom: 3rem;
 }
